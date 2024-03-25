@@ -10,7 +10,6 @@ This is a weekend project in the encode club, done in the second week.
 
 #### Table of contents
 
-- [Screenshots](#screenshots)
 - [Description](#description)
 - [Report](#report)
 - [Requirements](#requirements)
@@ -30,11 +29,15 @@ This is a weekend project in the encode club, done in the second week.
 - From the project directory, Run `npm install` to install dependencies
 - to use scripts run with `ts-node`
 
+---
+
 ### Report
 
 we developed and run scripts for `Ballot.sol` such as:
 
 ### 1. Giving Voting Rights
+
+---
 
 The Script can be found in [GiveRightToVote.ts](scripts/GiveRightToVote.ts)
 
@@ -62,6 +65,8 @@ we tested if any other address other than the `chairperson` could give voting ri
 
 ### 2. Casting Voting Rights
 
+---
+
 The Script can be found in [CastVote.ts](scripts/CastVote.ts)
 
 This function gives a `voter`(address) to give their votes (including votes delegated to them ) to a specified proposal
@@ -84,6 +89,8 @@ This is the transaction confirmed screenshot
 
 ### 3. Delegate Vote
 
+---
+
 The Script can be found in [DelegateVote.ts](scripts/DelegateVote.ts)
 
 This function gives a `voter`(address) ability to delegate their vote to another voter
@@ -101,6 +108,8 @@ This is the transaction confirmed screenshot
 ---
 
 ### 4. Winning Proposal and Winner Name
+
+---
 
 The Script can be found in [WinningProposal.ts](scripts/WinningProposal.ts) and [WinnerName.ts](scripts/WinnerName.ts)
 
@@ -123,5 +132,7 @@ we pass this number into the arguments of `WinnerName.ts` script to get the Byte
 ![image](./img/Screenshot%202024-03-24%20095448.png)
 
 ### Testing
+
+---
 
 To test the smart contract you can use the extension `Mocha Test Explorer for Visual Studio Code`
