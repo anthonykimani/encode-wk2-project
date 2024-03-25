@@ -27,6 +27,7 @@ This is a weekend project in the encode club, done in the second week.
 
 - Clone the [Repository](https://github.com/anthonykimani/encode-wk2-project.git) by running `git clone https://github.com/anthonykimani/encode-wk2-project.git`
 - From the project directory, Run `npm install` to install dependencies
+- Add your `METAMASK_PRIVATE_KEY` and `ALCHEMY_API_KEY` to your `.env` file as shown in the `.env.example` file
 - to use scripts run with `ts-node`
 
 ---
@@ -71,7 +72,7 @@ The Script can be found in [CastVote.ts](scripts/CastVote.ts)
 
 This function gives a `voter`(address) to give their votes (including votes delegated to them ) to a specified proposal
 
-we ran the scripts with `ts-node` which providing the contract address and voter address as arguments.
+we ran the scripts with `ts-node` which providing the contract address and proposal index as arguments.
 
 ```typescript
 npx ts-node --files ./scripts/CastVote.ts 0xc7f15c6d31a993496c23888559d31acbd159c8b0 1
@@ -115,7 +116,7 @@ The Script can be found in [WinningProposal.ts](scripts/WinningProposal.ts) and 
 
 Winning Proposal function retrieves the number of the winning proposal
 
-we ran the scripts with `ts-node` which providing the contract address and voter address as arguments.
+we ran the scripts with `ts-node` which providing the contract address.
 
 ```typescript
 npx ts-node --files ./scripts/WinningProposal.ts 0xc7f15c6d31a993496c23888559d31acbd159c8b0
