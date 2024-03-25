@@ -21,6 +21,8 @@ This is a weekend project in the encode club, done in the second week.
 
 `Ballot.sol` facilitates a decentralized voting system with delegation, allowing participants to vote on proposals and determine a winner based on accumulated votes.
 
+Here is the [Smart Contract](https://sepolia.etherscan.io/address/0xc7f15c6d31a993496c23888559d31acbd159c8b0) Deployed on Sepolia EtherScan
+
 ---
 
 ### Requirements
